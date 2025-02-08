@@ -48,8 +48,21 @@ func handleInputEvents(ch chan inputEvents) {
 			key := -1
 			if int(ev.Type) == evdev.EV_KEY {
 				key = int(ev.Code)
-			}
 
+				// Swap LeftAlt and LeftCtrl directly
+				switch ev.Code {
+				case evdev.KEY_LEFTALT:
+					ev.Code = evdev.KEY_LEFTCTRL
+				case evdev.KEY_LEFTCTRL:
+					ev.Code = evdev.KEY_LEFTALT
+				case evdev.KEY_TAB:
+					ev.Code = evdev.KEY_LEFTSHIFT
+				case evdev.KEY_LEFTMETA:
+					ev.Code = evdev.KEY_TAB
+				}
+			} 
+
+			// Existing fn key logic
 			switch {
 			case state != 1 && key == fnKey && ev.Value == 0 /* released */ :
 				{

@@ -9,7 +9,7 @@ import (
 	evdev "github.com/egorse/golang-evdev"
 )
 
-var device_glob = "/dev/input/by-id/*"
+var device_glob = "/dev/input/event3"
 var monitor = false
 var fnKey = evdev.KEY_SPACE
 var keyMap = keyMap1
