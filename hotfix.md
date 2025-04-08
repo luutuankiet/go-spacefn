@@ -45,6 +45,22 @@ Comment=Start Go SpaceFN on login
 ```
 
 
+`~/.config/autostart/keyboard-settings.desktop`
+
+
+```
+[Desktop Entry]
+Type=Application
+Exec=xset r off
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name=Keyboard Settings
+Comment=Set keyboard repeat rate
+
+```
+
+
 ## to unload and config
 `ps aux | grep spacefn`        
 then pkill it

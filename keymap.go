@@ -31,6 +31,7 @@ var keyMap1 = map[int]int{
 
 	// Esc and `
 	evdev.KEY_N:   evdev.KEY_GRAVE,
+	evdev.KEY_M:   evdev.KEY_SLASH,
 	evdev.KEY_GRAVE: evdev.KEY_ESC,
 	
 	// other
