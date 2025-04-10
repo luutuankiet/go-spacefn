@@ -18,16 +18,16 @@ var keyMap1 = map[int]int{
 	evdev.KEY_O: evdev.KEY_END,
 
 	// Fx keys
-	evdev.KEY_BACK: evdev.KEY_F1,
-	evdev.KEY_FORWARD: evdev.KEY_F2,
-	evdev.KEY_REFRESH: evdev.KEY_F3,
-	// evdev.KEY_4: evdev.KEY_F4,
-	evdev.KEY_SCALE: evdev.KEY_F5,
-	evdev.KEY_BRIGHTNESSDOWN: evdev.KEY_F6,
-	evdev.KEY_BRIGHTNESSUP: evdev.KEY_F7,
-	evdev.KEY_MUTE: evdev.KEY_F8,
-	evdev.KEY_VOLUMEDOWN: evdev.KEY_F9,
-	evdev.KEY_VOLUMEUP: evdev.KEY_F10,
+	// evdev.KEY_BACK: evdev.KEY_F1,
+	// evdev.KEY_FORWARD: evdev.KEY_F2,
+	// evdev.KEY_REFRESH: evdev.KEY_F3,
+	// // evdev.KEY_4: evdev.KEY_F4,
+	// evdev.KEY_SCALE: evdev.KEY_F5,
+	// evdev.KEY_BRIGHTNESSDOWN: evdev.KEY_F6,
+	// evdev.KEY_BRIGHTNESSUP: evdev.KEY_F7,
+	// evdev.KEY_MUTE: evdev.KEY_F8,
+	// evdev.KEY_VOLUMEDOWN: evdev.KEY_F9,
+	// evdev.KEY_VOLUMEUP: evdev.KEY_F10,
 
 	// Esc and `
 	evdev.KEY_N:   evdev.KEY_GRAVE,

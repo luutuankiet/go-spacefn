@@ -27,6 +27,8 @@ Default mapping is:
 
 Ensure you have permissions to access to /dev/input/by-id/* (i.e. you are in group input, or whatever your distro uses) and /dev/uinput (see i.e. https://github.com/aksommerville/wiimote-uinput how to handle it); or use sudo. Then:
 
+`go build`
+
 ```#./go-spacefn```
 
 # Current known/expected limitations

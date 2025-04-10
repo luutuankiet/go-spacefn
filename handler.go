@@ -57,7 +57,7 @@ func handleInputEvents(ch chan inputEvents) {
 					ev.Code = evdev.KEY_LEFTALT
 				case evdev.KEY_TAB:
 					ev.Code = evdev.KEY_LEFTSHIFT
-				case evdev.KEY_LEFTMETA:
+				case evdev.KEY_CAPSLOCK:
 					ev.Code = evdev.KEY_TAB
 				}
 			} 

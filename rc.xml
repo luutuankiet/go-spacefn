@@ -272,12 +272,12 @@
       </action>
     </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
-    <keybind key="A-S-Right">
+    <!-- <keybind key="A-S-Right">
       <action name="DirectionalCycleWindows">
         <direction>right</direction>
       </action>
-    </keybind>
-    <keybind key="A-S-Left">
+    </keybind> -->
+    <!-- <keybind key="A-S-Left">
       <action name="DirectionalCycleWindows">
         <direction>left</direction>
       </action>
@@ -291,7 +291,7 @@
       <action name="DirectionalCycleWindows">
         <direction>down</direction>
       </action>
-    </keybind>
+    </keybind> -->
     <!-- Keybindings to toggle fullscreen -->
     <keybind key="F11">
       <action name="ToggleFullscreen"/>
@@ -322,15 +322,22 @@
       <mousebind button="A-Left" action="Click">
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
+      <mousebind button="C-Left" action="Drag">
+        <!-- altdrag remap ken -->
+        <!-- <mousebind button="A-Left" action="Drag"> -->
+        <action name="Raise"/>
+        <action name="Focus"/>
         <action name="Move"/>
       </mousebind>
       <mousebind button="A-Right" action="Press">
-        <action name="Focus"/>
         <action name="Raise"/>
+        <action name="Focus"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="C-S-Left" action="Drag">
+        <!-- <mousebind button="A-Right" action="Drag"> -->
+        <action name="Focus"/>
+        <action name="Raise"/>
         <action name="Resize"/>
       </mousebind>
       <mousebind button="A-Middle" action="Press">
@@ -666,19 +673,16 @@
     <!-- controls if icons appear in the client-list-(combined-)menu -->
   </menu>
   <applications>
+    <application class="*">
+      <decor>no</decor>
+    </application>
     <!--
   # this is an example with comments through out. use these to make your
   # own rules, but without the comments of course.
   # you may use one or more of the name/class/role/title/type rules to specify
   # windows to match
 
-  <application name="the window's _OB_APP_NAME property (see obxprop)"
-              class="the window's _OB_APP_CLASS property (see obxprop)"
-          groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)"
-         groupclass="the window's _OB_APP_GROUP_CLASS property (see obxprop)"
-               role="the window's _OB_APP_ROLE property (see obxprop)"
-              title="the window's _OB_APP_TITLE property (see obxprop)"
-               type="the window's _OB_APP_TYPE property (see obxprob)..
+  <application name="the window's _OB_APP_NAME property (see obxprop)" class="the window's _OB_APP_CLASS property (see obxprop)" groupname="the window's _OB_APP_GROUP_NAME property (see obxprop)" groupclass="the window's _OB_APP_GROUP_CLASS property (see obxprop)" role="the window's _OB_APP_ROLE property (see obxprop)" title="the window's _OB_APP_TITLE property (see obxprop)" type="the window's _OB_APP_TYPE property (see obxprob)..
                       (if unspecified, then it is 'dialog' for child windows)">
   # you may set only one of name/class/role/title/type, or you may use more
   # than one together to restrict your matches.

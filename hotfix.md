@@ -1,6 +1,16 @@
  ## to get this working on chromebook del 3100 running lubuntu
 
 
+## compile the bin
+`go build`
+
+
+## set your user in the input group
+
+`sudo usermod -a -G input $USER`
+
+
+
 ## make sure /dev/uinput permission is fixed
 /dev/uinput must have 666 with this 
 
